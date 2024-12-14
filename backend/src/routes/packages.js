@@ -4,9 +4,9 @@ import { getAllPackages, getPackageById } from '../controllers/packageController
 const router = express.Router();
 
 // Get all packages
-router.get('/packages', getAllPackages);
+router.get('/', getAllPackages);
 
 // Get package by ID
-router.get('/package/:id', getPackageById);
+router.get('/:id', getPackageById);
 
 export default router;
